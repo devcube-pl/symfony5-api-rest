@@ -14,7 +14,7 @@
         "symfony/dotenv": "4.2.*",
         "symfony/flex": "^1.1",
         "symfony/form": "4.2.*",
-        "symfony/framework-bundle": "^4.1",
+        "symfony/framework-bundle": "^4.2",
         "symfony/orm-pack": "^1.0",
         "symfony/phpunit-bridge": "4.2.*",
         "symfony/routing": "4.2.*",
@@ -75,8 +75,8 @@
     },
     "extra": {
         "symfony": {
-            "allow-contrib": false,
-            "require": "4.2.*"                        
+            "allow-contrib": true,
+            "require": "4.2.*"
         }
     }
 }
