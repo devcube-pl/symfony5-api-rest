@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/Tony133/Symfony4ApiRest.svg?branch=master)](https://travis-ci.org/Tony133/Symfony4ApiRest)
 
-Simple example of an API REST with Symfony 4.3
+Simple example of an API REST with Symfony 4.4
 
 ## Install with Composer
 
