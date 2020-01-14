@@ -1,6 +1,6 @@
 {
     "name": "tony133/symfony4-api-rest",
-    "description": "Simple example of an API REST with Symfony 4.4",
+    "description": "Simple example of an API REST with Symfony 4.4 LTS",
     "type": "project",
     "license": "MIT",
     "require": {
