@@ -27,7 +27,6 @@ class AppFixtures extends Fixture implements ContainerAwareInterface
 		}
 
 		$manager->flush();
-
 	}
 
 	private function loadUsers(ObjectManager $manager)
@@ -44,6 +43,7 @@ class AppFixtures extends Fixture implements ContainerAwareInterface
         $manager->persist($userAdmin);
         $manager->flush();
     }
+    
     public function setContainer(ContainerInterface $container = null)
     {
         $this->container = $container;

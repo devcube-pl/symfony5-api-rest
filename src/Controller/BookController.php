@@ -2,8 +2,8 @@
 
 namespace App\Controller;
 
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use FOS\RestBundle\Controller\FOSRestController;
+use Symfony\Component\Routing\Annotation\Route;
+use FOS\RestBundle\Controller\AbstractFOSRestController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -14,10 +14,10 @@ use App\Form\BookType;
 /**
  * @Route("/api")
  */
-class BookController extends FOSRestController
+class BookController extends AbstractFOSRestController
 {
 	/**
-	 * @Route("/books", name="get_books")
+	 * @Route("/books", name="get_books", methods="GET")
      */
     public function getBooksAction(): array
     {
@@ -32,7 +32,7 @@ class BookController extends FOSRestController
     }
 
 	/**
-	 * @Route("/books/{id}", name="get_book")
+	 * @Route("/books/{id}", name="get_book", methods="GET")
      */
     public function getBookAction(int $id): ?Book
     {
@@ -51,7 +51,7 @@ class BookController extends FOSRestController
 	}
 
 	/**
-	 * @Route("/book/new", name="post_book")
+	 * @Route("/book/new", name="post_book", methods="POST")
      */
     public function postBookAction(Request $request): ?Book
     {
@@ -71,7 +71,7 @@ class BookController extends FOSRestController
     }
 
 	/**
-	 * @Route("/books/edit/{id}", name="put_book")
+	 * @Route("/books/edit/{id}", name="put_book", methods="PUT")
 	 */
     public function putBookAction(Request $request, int $id): ?Book
     {
@@ -91,7 +91,7 @@ class BookController extends FOSRestController
     }
 
 	/**
-	 * @Route("/books/remove/{id}", name="delete_book")
+	 * @Route("/books/remove/{id}", name="delete_book", methods="DELETE")
 	 */
     public function deleteBookAction(int $id): ?Book
     {
@@ -103,7 +103,6 @@ class BookController extends FOSRestController
         $book = $em->getRepository(Book::class)->find($id);
         $em->remove($book);
         $em->flush();
-
 
         return $book;
     }

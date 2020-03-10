@@ -1,8 +1,8 @@
-# Symfony4ApiRest
+# Symfony5ApiRest
 
-[![Build Status](https://travis-ci.org/Tony133/Symfony4ApiRest.svg?branch=master)](https://travis-ci.org/Tony133/Symfony4ApiRest)
+[![Build Status](https://travis-ci.org/Tony133/Symfony5ApiRest.svg?branch=master)](https://travis-ci.org/Tony133/Symfony5ApiRest)
 
-Simple example of an API REST with Symfony 4.4 LTS
+Simple example of an API REST with Symfony 5
 
 ## Install with Composer
 
