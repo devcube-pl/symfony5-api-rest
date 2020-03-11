@@ -10,6 +10,7 @@ composer.phar
 /public/bundles/
 /var/
 /vendor/
+symfony.lock
 ###< symfony/framework-bundle ###
 
 ###> symfony/web-server-bundle ###
