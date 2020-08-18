@@ -1,6 +1,6 @@
 # Symfony5ApiRest
 
-[![Build Status](https://travis-ci.org/Tony133/Symfony5ApiRest.svg?branch=master)](https://travis-ci.org/Tony133/Symfony5ApiRest)
+[![Build Status](https://travis-ci.org/Tony133/symfony5-api-rest.svg?branch=master)](https://travis-ci.org/Tony133/symfony5-api-rest)
 
 Simple example of an API REST with Symfony 5.1
 
